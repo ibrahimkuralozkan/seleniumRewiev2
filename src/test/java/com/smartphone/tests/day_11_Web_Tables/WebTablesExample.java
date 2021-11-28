@@ -52,7 +52,7 @@ public class WebTablesExample {
     @Test
     public void getALlcolumns() {
 
-        List<WebElement> columns = driver.findElements(By.xpath("//table[@id='table1']//tr[2]"));
+        List<WebElement> columns = driver.findElements(By.xpath("//table[@id='table1']/tbody/tr[1]/td"));
         System.out.println("columns.size() = " + columns.size());
 
         for (WebElement column:columns
@@ -60,4 +60,16 @@ public class WebTablesExample {
             System.out.println(column.getText());
         }
 
-    }}
+    }
+
+
+
+
+
+
+
+
+
+
+
+}
