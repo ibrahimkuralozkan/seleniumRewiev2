@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-import java.util.Locale;
+
 
 public class WebDriverFactory {
 
@@ -13,8 +13,10 @@ public class WebDriverFactory {
 
    public static WebDriver getDriver(String browserType){
        WebDriver driver = null;
+
        switch (browserType.toLowerCase()){
            case "chrome":
+
     WebDriverManager.chromedriver().setup();
     driver=new ChromeDriver();
            break;
@@ -23,6 +25,7 @@ public class WebDriverFactory {
                driver=new FirefoxDriver();
 
        }
+       driver.manage().window().maximize();
        return  driver;
    }
 
