@@ -2,7 +2,6 @@ package com.smartphone.tests;
 
 import com.smartphone.utilities.ConfigurationReader;
 import com.smartphone.utilities.Driver;
-import javafx.application.ConditionalFeature;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
