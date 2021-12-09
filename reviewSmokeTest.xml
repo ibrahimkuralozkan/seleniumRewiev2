@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Review Week Smoke Test" verbose="1">
+    <test name="Smoke Test">
+        <classes>
+            <class name="com.cybertek.tests.day12_properties_driver_tests.LoginTest"></class>
+            <class name="com.cybertek.tests.day11_webtables.WebTablesExample"></class>
+        </classes>
+    </test>
+</suite>
